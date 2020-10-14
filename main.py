@@ -83,3 +83,5 @@ first_df_off.reset_index().set_index(['row_number'])
 first_df_off = first_df_off.pivot(index="row_number", columns=["category"], values="data")
 first_df_off = first_df_off.dropna(how="all", axis=1)
 first_df_off = first_df_off.dropna(how="all", axis=0)
+
+if __name__ == "__main__":
